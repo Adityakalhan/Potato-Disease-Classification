@@ -9,6 +9,9 @@ import tensorflow as tf
 
 app = FastAPI()
 
+#endpoint = "http://localhost:8501/v1/models/potatoes_model:predict"
+
+
 MODEL = tf.keras.models.load_model("../saved_models/1")
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 
